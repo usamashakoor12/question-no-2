@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Array Element</title>
+</head>
+<body>
+    <h1>Name of fruit containing the letter "E"<br>
+        ["Guava","Orange","Pineapple","Apple","Banana",
+        "Mango","Grapes","Papaya","Coconut","Graps","Kiwi","Olive"]</h1>
+        <button onclick="findString()">Click On button</button>
+        <h2 id="display"></h2>
+
+    
+        <script>
+            var show=document.getElementById("display")
+            function findString(){
+                show.innerHTML="";
+                let fruit=["Guava","Orange","Pineapple","Apple","Banana",
+        "Mango","Grapes","Papaya","Coconut","Graps","Kiwi","Olive"];
+        for(let i=0;i<fruit.length; i++)
+        if(fruit[i].includes("e"))
+        {show.innerHTML+=fruit[i] +"<br>"}
+            }
+        </script>
+    
+</body>
+</html>
